@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+body::-webkit-scrollbar {
+    width: 12px; /* width of the entire scrollbar */
+}  
+body::-webkit-scrollbar-track {
+    background: white; /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(66, 66, 66); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid white; /* creates padding around scroll thumb */
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+    margin: 20px 30px;
+}
+/*Bandeau de navigation*/
+.logo {
+    margin-top: 0.5%;
+    width: 174px;
+    height: 35px;
+}
+nav {
+  margin-top: 9px;
+  border: 1px solid black;
+  font-family: 'raleway';
+  backdrop-filter: blur(8px);
+  background: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  top: 2%;;
+  z-index: 100;
+  width: 500px;
+  border-radius: 8px; 
+  height: 5%;
+  text-align: initial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-left: calc(50% - 300px);
+}
+nav a {
+  display: block;
+  text-decoration: none;
+  font-size: 15px;
+  margin-right: 20px;
+  color: black;
+  cursor: pointer;
+}
+.slide-line {
+    text-decoration: none;
+    position: relative;
+}
+.slide-line::before {
+    content: "";
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 1.5px;
+    bottom: 0;
+    transform-origin: 100% 0;
+    transform: scaleX(0);
+    transition: transform 0.2s;
+}  
+.slide-line:hover::before {
+    transform-origin: 0 0;
+    transform: scaleX(1);
+}
+
+/* Fin bandeau de navigation*/
+
+
+/*Video*/
+video{
+    position: absolute;
+    top: 90px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 498px;
+}
+/*Fin video*/
+
+
+/*Section principale*/
+.main{
+    margin: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main h1{
+    text-align: center;
+    margin-top: 500px;
+    font-family: "raleway";
+    font-size: 25px;
+}
+/*Toutes les cartes*/
+.cards{
+    margin-top: -50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards .card {
+    margin-right: 20px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+.cards .card img{
+    width: 300px;
+}
+.cards .card .card-header{
+    font-family: "raleway";
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    cursor:text;
+}
+.cards .card a button{
+    border-radius: 8px;
+    height: 30px;
+    width: 300px;
+    border: none;
+    cursor: pointer;
+    background: black;
+    color: white;
+    transition: all 0.2s;
+}
+.cards .card a button:hover {
+    background: white;
+    border: 1px solid black;
+    color: black;
+}
+/* Fin des cartes*/
+
+/*Fin section principale*/
+
+/* A propos */
+
+.apropos{
+    position: relative;
+}
+.apropos a{
+    transition: all 0.2s;
+}
+.apropos a:hover{
+    color: black;
+}
+.apropos,h1,img,p{
+    margin-top: 70px;
+}
+.apropos p a{
+    color: #d60818;
+}
+.apropos h1{
+    margin-top: 25px;
+    font-family: "raleway";
+    font-size: 25px;
+    text-align: center;
+}
+.apropos img{
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 700px;
+    height: 520px;
+}
+.apropos p{
+    position: absolute;
+    top: 10px;
+    font-size: 18px;
+    font-family: "raleway";
+    display: inline;
+}
+/* Fin de a propos */
+
+/* Pied de page*/
+.footer{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer p{
+    font-family:"raleway" ;
+    font-size: 18px;
+}
+.footer a{
+    color: black;
+}
+.footer i{
+    color: rgb(49, 49, 49)
+}
+/*Fin du pied de page*/
+
+/* RESPONSIVE*/
+@media all and (max-width:1024px){
+    video{
+        height: 150px;
+        position: absolute;
+        top: 90px;
+        left: 0px;
+    }
+    nav img{
+        margin-top: 10px;
+        width: 174px;
+        height: 35px;
+    }
+   
+    .apropos img{
+    display: inline-block;
+    margin-top: 160%;
+    margin-left: 1px;
+    height: 300px;
+    }
+
+    .apropos p {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+}
+/*FIN DU RESPONSIVE*/
