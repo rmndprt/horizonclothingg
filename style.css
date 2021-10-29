@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body{
+    margin-right: 10px;
+}
 body::-webkit-scrollbar {
     width: 12px; /* width of the entire scrollbar */
 }  
@@ -20,37 +23,26 @@ body{
 }
 /*Bandeau de navigation*/
 .logo {
-    margin-top: 0.5%;
-    width: 174px;
-    height: 35px;
+    margin-top: 2%;
+    height: 45px;
 }
-nav {
-  margin-top: 9px;
-  border: 1px solid black;
-  font-family: 'raleway';
-  backdrop-filter: blur(8px);
-  background: #fff;
-  background: rgba(255, 255, 255, 0.5);
-  top: 2%;;
-  z-index: 100;
-  width: 500px;
-  border-radius: 8px; 
-  height: 5%;
-  text-align: initial;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  margin-left: calc(50% - 300px);
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
-nav a {
-  display: block;
-  text-decoration: none;
-  font-size: 15px;
-  margin-right: 20px;
-  color: black;
-  cursor: pointer;
+.navbar .onglets a {
+    flex-wrap: wrap;
+    position: relative;
+    top: 4px;
+    margin-right: 10px;
+    font-family: 'raleway';
+    font-size: 1,4em;
+    color: black;
+    font-weight: bold;
 }
+
 .slide-line {
     text-decoration: none;
     position: relative;
@@ -71,50 +63,48 @@ nav a {
     transform: scaleX(1);
 }
 
-/* Fin bandeau de navigation*/
 
 
-/*Video*/
-video{
+video {
     position: absolute;
     top: 90px;
-    left: 0px;
-    right: 0px;
+    left: 0;
     width: 100%;
-    height: 498px;
 }
-/*Fin video*/
 
-
-/*Section principale*/
 .main{
-    margin: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top: 690px;
 }
-.main h1{
-    text-align: center;
-    margin-top: 500px;
-    font-family: "raleway";
+
+.main .cards .card .price{
+    font-weight: bold;
+}
+.main h1{    
+    top: 550px;
+    font-family: 'raleway';
     font-size: 25px;
+
 }
-/*Toutes les cartes*/
 .cards{
-    margin-top: -50px;
+    justify-content: center;
+    margin-top: -10em;
     display: flex;
     flex-wrap: wrap;
 }
+.cards .price{
+    font-weight: bold;
+    font-family: 'lato';
+}
 .cards .card {
+    margin-top: 30px;
     margin-right: 20px;
     cursor: pointer;
     justify-content: center;
     align-items: center;
+height: 534px;
+padding: 10px 10px 10px 10px;
 }
+
 .cards .card img{
     width: 300px;
 }
@@ -146,49 +136,31 @@ video{
 /*Fin section principale*/
 
 /* A propos */
-
 .apropos{
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
 }
+
+.apropos p{
+    font-family: 'raleway';
+    font-size: 19px;
+}
 .apropos a{
-    transition: all 0.2s;
-}
-.apropos a:hover{
-    color: black;
-}
-.apropos,h1,img,p{
-    margin-top: 70px;
-}
-.apropos p a{
     color: #d60818;
 }
-.apropos h1{
-    margin-top: 25px;
-    font-family: "raleway";
-    font-size: 25px;
-    text-align: center;
-}
-.apropos img{
-    display: inline-block;
-    margin-top: 10px;
-    margin-left: 700px;
-    height: 520px;
-}
-.apropos p{
-    position: absolute;
-    top: 10px;
-    font-size: 18px;
-    font-family: "raleway";
-    display: inline;
+.apropos a:hover{
+    color: #d60818;
 }
 /* Fin de a propos */
 
 /* Pied de page*/
 .footer{
-    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
+    top: 100px;
 }
 .footer p{
     font-family:"raleway" ;
@@ -204,29 +176,142 @@ video{
 
 /* RESPONSIVE*/
 @media all and (max-width:1024px){
-    video{
-        height: 150px;
-        position: absolute;
-        top: 90px;
-        left: 0px;
-    }
+
     nav img{
         margin-top: 10px;
         width: 174px;
         height: 35px;
     }
    
-    .apropos img{
-    display: inline-block;
-    margin-top: 160%;
-    margin-left: 1px;
-    height: 300px;
-    }
+
 
     .apropos p {
-        position: absolute;
         top: 10px;
         left: 10px;
     }
 }
-/*FIN DU RESPONSIVE*/
+
+
+@media all and (max-width:563px){
+video{
+    position: absolute;
+    top:-4% ;
+    width: 100%;
+    height: 498px;
+}
+}
+@media all and (max-width:1985px){
+    .main{
+        margin-top: 970px;
+    }
+  }
+  @media all and (min-width:1895px){
+    .main{
+        margin-top: 950px;
+    }
+  }
+  @media all and (max-width:1690px){
+    .main{
+        margin-top: 840px;
+    }
+  }
+  @media all and (max-width:1547px){
+    .main{
+        margin-top: 800px;
+    }
+  }
+  @media all and (max-width:1428px){
+    .main{
+        margin-top: 750px;
+    }
+  }
+  @media all and (max-width:1312px){
+    .main{
+        margin-top: 720px;
+    }
+  }
+  @media all and (max-width:1197px){
+    .main{
+        margin-top: 640px;
+    }
+  }
+  @media all and (max-width:1053px){
+    .main{
+        margin-top: 600px;
+    }
+  }
+  @media all and (max-width:931px){
+    .main{
+        margin-top: 580px;
+    }
+  }
+  @media all and (max-width:873px){
+    .main{
+        margin-top: 540px;
+    }
+  }
+  @media all and (max-width:783px){
+    .main{
+        margin-top: 500px;
+    }
+  }
+  @media all and (max-width:682px){
+    .main{
+        margin-top: 460px;
+    }
+  }
+  @media all and (max-width:571px){
+    .main{
+        margin-top: 420px;
+    }
+  }
+  @media all and (max-width:463px){
+    .main{
+        margin-top: 390px;
+    }
+  }
+
+
+
+
+
+@media all and (max-width:695px){
+    .footer{
+        margin-top: 220px;
+    }
+}
+@media all and (min-width:522px){
+    .footer{
+        margin-top: 290px;
+    }
+}
+@media all and (max-width:525px){
+    .footer{
+        margin-top: 310px;
+    }
+}
+@media all and (max-width:382px){
+    .footer{
+        margin-top: 360px;
+    }
+}
+@media all and (max-width:342px){
+    .footer{
+        margin-top: 390px;
+    }
+}
+@media all and (max-width:306px){
+    .footer{
+        margin-top: 410px;
+    }
+}
+@media all and (max-width:295px){
+    .footer{
+        margin-top: 450px;
+    }
+}
+@media all and (max-width:276px){
+    .footer{
+        margin-top: 480px;
+    }
+}
