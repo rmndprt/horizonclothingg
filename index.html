@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="hSAWnmj2JpmmFdFqIEgoJ7HHEPcuHf2WxV8QmylP8to" />
     <script src="https://kit.fontawesome.com/78654b6e18.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="cursor.css">
@@ -18,70 +19,105 @@
 </head>
 
 <body>
-    <nav>
-        <a href="#"><img class="logo" src="medias/bandeausite.png" alt="logo"></a>
-        <a href="#" class="slide-line">Accueil</a>
-        <a href="#articles" class="slide-line">Articles</a>
-        <a href="#apropos" class="slide-line">À propos</a>
-        <a href="#contact" class="slide-line">Contact</a>
-    </nav>
 
+    <div class="navbar">
+        <a href="#"><img class="logo" src="medias/bandeausite.png" alt="logo"></a>
+        <div class="onglets">
+            <a href="#" class="slide-line">Accueil</a>
+            <a href="#articles" class="slide-line">Articles</a>
+            <a href="#apropos" class="slide-line">À propos</a>
+            <a href="#contact" class="slide-line">Contact</a>
+        </div>
+    </div>
 
 <video src="medias/bann.mov"  autoplay loop muted></video>
 
-<br>
 
-<!--Section principale-->
-<section class="main">
-    <h1 id="articles" >Articles</h1>
+    <section class="main"> 
+      <div class="cards">
+  
+            <div class="card" id="articles">
+                <img src="medias/1devant.png" data-src="1devant.png" id="firstdevant" class="photo" alt="devant">
+                <div class="card-header">
+                    <h4 class="title">T-shirt avec logo à l'avant </br  >et illustration japonaise au dos</h4>
+                    <h4 class="price">20,00€</h4>
+                </div>
+                <a href="tshirt1.html"><button>Acheter</button></a>
 
-    <!--Toutes les cartes -->
-    <div class="cards">
-        <div class="card">
-            <img src="medias/1devant.png" data-src="1devant.png" id="firstdevant" class="photo" alt="devant">
-            <div class="card-header">
-                <h4 class="title">T-shirt avec logo à l'avant </br  >et illustration japonaise au dos</h4>
-                <h4 class="price">20,00€</h4>
             </div>
-            <a href="https://forms.gle/YPcgc73cQ79j89xJ7"><button>Acheter</button></a>
-        </div>
 
-        <div class="card">
-            <img src="medias/2devant.png" data-src="2devant.png" class="photo" alt="devant">
-            <div class="card-header">
-                <h4 class="title">T-shirt HORIZON japonais et français</br> et illustration japonaise au dos</h4>
-                <h4 class="price">20,00€</h4>
+            <div class="card">
+                <img src="medias/2devant.png" data-src="2devant.png" class="photo" alt="devant">
+                <div class="card-header">
+                    <h4 class="title">T-shirt HORIZON japonais et français</br> et illustration japonaise au dos</h4>
+                    <h4 class="price">20,00€</h4>
+                </div>
+                <a href="tshirt2.html"><button>Acheter</button></a>
             </div>
-            <a href="https://forms.gle/YPcgc73cQ79j89xJ7"><button>Acheter</button></a>
-        </div>
 
-        <div class="card">
-            <img src="medias/3devant.png" data-src="3devant.png" class="photo" alt="devant">
-            <div class="card-header">
-                <h4 class="title">T-shirt avec citation  de Victor Hugo <br>et illustration japonaise au dos</h4>
-                <h4 class="price">20,00€</h4>
+            <div class="card">
+                <img src="medias/3devant.png" data-src="3devant.png" class="photo" alt="devant">
+                <div class="card-header">
+                    <h4 class="title">T-shirt avec citation  de Victor Hugo <br>et illustration japonaise au dos</h4>
+                    <h4 class="price">20,00€</h4>
+                </div>
+                <a href="tshirt3.html"><button>Acheter</button></a>
             </div>
-            <a href="https://forms.gle/YPcgc73cQ79j89xJ7"><button>Acheter</button></a>
+ 
+
+            <div class="card">
+                <img src="medias/2pulldevant.png" data-src="2pulldevant.png" class="pull1" alt="devant">
+                <div class="card-header">
+                    <h4 class="title">Hoodie avec écriture chinoise </br>devant et illustration au dos</h4>
+                    <h4 class="price">35,00€</h4>
+                </div>
+                <a href="pull1.html"><button>Acheter</button></a>
+            </div>
+
+            <div class="card">
+                <img src="medias/3pulldevantpng.png" data-src="3pulldevantpng.png" class="pull2" alt="devant">
+                <div class="card-header">
+                    <h4 class="title">Sweat avec écriture devant</br> et illustration au dos</h4>
+                    <h4 class="price">30,00€</h4>
+                </div>
+                <a href="pull2.html"><button>Acheter</button></a>
+            </div>
+
+            <div class="card">
+                <img src="medias/1pulldevant.png" data-src="1pulldevant.png" class="pull3" alt="devant">
+                <div class="card-header">
+                    <h4 class="title">Hoodie avec illustration devant</br> et au dos</h4>
+                    <h4 class="price">35,00€</h4>
+                </div>
+                <a href="pull3.html"><button>Acheter</button></a>
+            </div>
+  
+          
         </div>
-    </div>
-    
-</section>
+       
+    </section>
 
 
-<section class="apropos">
-    <h1 id="apropos">A propos</h1>
-    <img src="medias/photop.png" alt="">
-    <p>Salut ! </br>
-        Je m’appelle Romain DUPORT, j’ai 15 ans, et je suis passionné de code  et de</br> graphisme.</br>
-        C’est pour cela que je me suis amusé à créer ma propre marque de vêtements</br> de style japonais, dont le nom est « HORIZON ».</br>
-        Les designs ont été réalisés par moi même !</br> 
-        Je fais cela pour le plaisir, mais je vends mes vêtements, et cela pourrait me faire </br>très plaisir si j’avais quelques commandes !</br> </br>
-        Si vous souhaitez me contacter : </br>
-        Par téléphone au <a id="contact" href="tel:0632574553">06.32.57.45.53</a>
+    <section class="apropos" id="apropos">
     </br>
-        Par mail à <a href="mailto:rom1.dprt@gmail.com">rom1_dprt@gmail.com</a>
-        </p>
-</section>
+    <div class="texte">  <p>Salut ! </br>
+            Je m'appelle Romain, j'ai 16 ans, et je suis 
+            passionné de code et de graphisme.</br>
+            J'ai créé ma marque de vêtements streetwear
+            japonnaise "HORIZON".</br>
+            Tous les designs et le site sont réalisés par 
+            moi.</br>
+            Les produits sont fabriqués en France, et sont
+            de très bonne qualité.</br>
+            Ils sont composés de 80% de coton, et de 20%
+            de polyester. </br> 
+        </br>
+            Par téléphone au <a id="contact" href="tel:0632574553">06.32.57.45.53</a>
+        </br>
+            Par mail à <a href="mailto:rom1.dprt@gmail.com">rom1_dprt@gmail.com</a>
+            </p>
+    </div>
+    </section>
 
 <div class="footer">
     <p>&copy;Romain DUPORT, 2021</p>
